@@ -16,12 +16,10 @@ export default function Calculator() {
   return (
     <div className="calculator">
       <p>
-        <label htmlFor="value">Enter a number:</label>
         <input
           type="text"
           id="value"
           name="value"
-          placeholder="Enter a number"
           onChange={(event) => { setValue(Number(event.target.value)); }}
           value={value}
         />
